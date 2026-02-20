@@ -26,3 +26,17 @@ setTimeout(() => {
 }, 2000); // duración del loader (ajusta según tu GIF)
 
 
+document.body.classList.add("no-scroll"); // bloquea scroll al iniciar
+
+loaderVideo.addEventListener("ended", () => {
+
+  loader.style.opacity = "0";
+  heroVideo.style.opacity = "1";
+  heroVideo.play();
+
+  setTimeout(() => {
+    loader.style.display = "none";
+    document.body.classList.remove("no-scroll"); // vuelve a permitir scroll
+  }, 1500);
+
+});

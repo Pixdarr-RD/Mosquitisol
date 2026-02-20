@@ -113,3 +113,25 @@ body {
 .gray { background: #000000; color: rgb(255, 255, 255); }
 .blue { background: #1877f2; color: white;}
 .green { background: #25d366; color: white; }
+
+
+.watermark {
+  position: fixed;
+  bottom: 15px;
+  right: 20px;
+  font-size: 12px;
+  font-family: sans-serif;
+  color: rgba(0, 0, 0, 0.6);
+  text-decoration: none;
+  z-index: 9999;
+  transition: 0.3s ease;
+}
+
+.watermark strong {
+  font-weight: 600;
+}
+
+.watermark:hover {
+  color: #ff0000;
+  transform: scale(1.05);
+}

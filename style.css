@@ -17,6 +17,9 @@ body {
   
 }
 
+body {
+  overflow: hidden;
+}
 
 .hero video {
   width: 100%;

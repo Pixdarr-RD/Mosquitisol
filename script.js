@@ -43,16 +43,3 @@ loaderVideo.addEventListener("ended", () => {
 
 
 
-//wifi
-wifiBtn.addEventListener("click", function(e) {
-  e.preventDefault();
-
-  wifiText.textContent = "Copiada ✅";
-
-  navigator.clipboard.writeText(password);
-
-  setTimeout(() => {
-    wifiText.textContent = "Contraseña WIFI";
-  }, 2000);
-});
-

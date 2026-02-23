@@ -40,3 +40,19 @@ loaderVideo.addEventListener("ended", () => {
   }, 1500);
 
 });
+
+
+
+//wifi
+wifiBtn.addEventListener("click", function(e) {
+  e.preventDefault();
+
+  wifiText.textContent = "Copiada ✅";
+
+  navigator.clipboard.writeText(password);
+
+  setTimeout(() => {
+    wifiText.textContent = "Contraseña WIFI";
+  }, 2000);
+});
+

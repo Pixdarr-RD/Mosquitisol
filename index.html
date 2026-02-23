@@ -34,19 +34,24 @@
   <i class="fab fa-instagram"></i>
 </a>
 
-<a href="#" class="btn gray">
+<a href="https://www.tiktok.com/@mosquitisol.bistr?_r=1&_t=ZS-94AXpcrGgbJ" class="btn gray">
   <span>Mosquitisol</span>
   <i class="fab fa-tiktok"></i>
 </a>
 
-<a href="#" class="btn blue">
+<a href="https://www.facebook.com/share/17HucZnmEj/" class="btn blue">
   <span>Mosquitisol</span>
   <i class="fab fa-facebook-f"></i>
 </a>
 
-<a href="https://wa.me/1809xxxxxxx" class="btn green">
+<a href="https://wa.me/8296973025" class="btn green">
   <span>WhatsApp</span>
   <i class="fab fa-whatsapp"></i>
+</a>
+
+<a href="#" class="btn wifi" id="wifiBtn">
+  <span id="wifiText">Contraseña WIFI</span>
+  <i class="fa-solid fa-wifi"></i>
 </a>
 
 <a href="https://www.instagram.com/pixdarrx/" target="_blank" class="watermark">
@@ -56,9 +61,30 @@
 
 
 <script src="script.js"></script>
+<script>
+  const wifiBtn = document.getElementById("wifiBtn");
+  const wifiText = document.getElementById("wifiText");
+
+  const password = "Mosquitisol2026"; // 👈 Cambia aquí tu contraseña real
+
+  wifiBtn.addEventListener("click", function(e) {
+    e.preventDefault();
+
+    // Mostrar contraseña
+    wifiText.textContent = password;
+
+    // Copiar al portapapeles
+    navigator.clipboard.writeText(password)
+      .then(() => {
+        alert("Contraseña copiada ✅");
+      })
+      .catch(err => {
+        console.error("Error al copiar: ", err);
+      });
+  });
+</script>
 </body>
 </html>
-
 
 
 

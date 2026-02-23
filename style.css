@@ -114,7 +114,6 @@ body {
 .blue { background: #1877f2; color: white;}
 .green { background: #25d366; color: white; }
 .wifi { background: #008c99; color: rgb(255, 255, 255); }
-o
 
 .watermark {
   position: fixed;
@@ -136,3 +135,4 @@ o
   color: #ff0000;
   transform: scale(1.05);
 }
+

@@ -89,7 +89,7 @@ body {
   justify-content: space-between;
   align-items: center;
   padding: 18px 22px;
-  margin-bottom: 18px;
+  margin-bottom: 13px;
   border-radius: 18px;
   text-decoration: none;
   font-weight: bold;
@@ -113,7 +113,8 @@ body {
 .gray { background: #000000; color: rgb(255, 255, 255); }
 .blue { background: #1877f2; color: white;}
 .green { background: #25d366; color: white; }
-
+.wifi { background: #008c99; color: rgb(255, 255, 255); }
+o
 
 .watermark {
   position: fixed;

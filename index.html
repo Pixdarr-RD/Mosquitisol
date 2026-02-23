@@ -65,26 +65,23 @@
   const wifiBtn = document.getElementById("wifiBtn");
   const wifiText = document.getElementById("wifiText");
 
-  const password = "Mosquitisol023"; // 👈 Cambia aquí tu contraseña real
+  const password = "Mosquitisol023"; // 👈 cambia aquí tu contraseña
 
   wifiBtn.addEventListener("click", function(e) {
     e.preventDefault();
 
-    // Mostrar contraseña
-    wifiText.textContent = password;
+    navigator.clipboard.writeText(password);
 
-    // Copiar al portapapeles
-    navigator.clipboard.writeText(password)
-      .then(() => {
-        alert("Contraseña copiada ✅");
-      })
-      .catch(err => {
-        console.error("Error al copiar: ", err);
-      });
+    wifiText.textContent = "Copiada ✅";
+
+    setTimeout(() => {
+      wifiText.textContent = "Contraseña WIFI";
+    }, 2000);
   });
 </script>
 </body>
 </html>
+
 
 
 
